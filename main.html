@@ -7,21 +7,61 @@
  <title>Life's Bookshelf</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
- <script src="main.js"></script>
+ <script src="./main.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Poiret+One|Righteous|Share+Tech+Mono" rel="stylesheet">
 </head>
 
 <body>
 
  <div class="mainUpper">
-  <div class="bookOne">Hello</div>
-  <div class="bookTwo">Hello</div>
-  <div class="bookThree">ewf</div>
-  Hello
- </div>
- <div class="mainLower">
+  <div class="bookWrapper">
+   <div class="inputWrapper">
+    <input type="text" class="titleInput" id="bookOneTitleTextInput" placeholder="Book Title...">
+    <button onclick="bookOneTitleFunction()">Rename Book</button>
+   </div>
+   <div class="inputWrapper">
+    <input type="text" class="titleInput" id="bookOneAuthorTextInput" placeholder="Author Name...">
+    <button onclick="bookOneAuthorFunction()">Name Author</button>
+   </div>
+   <div class="book" id="bookOne">
+    <div id="bookOneTitleTextDisplay"></div>
+    <div id="bookOneAuthorTextDisplay"></div>
+   </div>
+  </div>
 
+  <div class="bookWrapper">
+   <div class="inputWrapper">
+    <input type="text" class="titleInput" id="bookTwoTitleTextInput" placeholder="Book Title...">
+    <button onclick="bookTwoTitleFunction()">Rename Book</button>
+   </div>
+   <div class="inputWrapper">
+    <input type="text" class="titleInput" id="bookTwoAuthorTextInput" placeholder="Author Name...">
+    <button onclick="bookTwoAuthorFunction()">Name Author</button>
+   </div>
+   <div class="book" id="bookTwo">
+    <div id="bookTwoTitleTextDisplay"></div>
+    <div id="bookTwoAuthorTextDisplay"></div>
+   </div>
+  </div>
+
+  <div class="bookWrapper">
+   <div class="inputWrapper">
+    <input type="text" class="titleInput" id="bookThreeTitleTextInput" placeholder="Book Title...">
+    <button onclick="bookThreeTitleFunction()">Rename Book</button>
+   </div>
+   <div class="inputWrapper">
+    <input type="text" class="titleInput" id="bookThreeAuthorTextInput" placeholder="Author Name...">
+    <button onclick="bookThreeAuthorFunction()">Name Author</button>
+   </div>
+   <div class="book" id="bookThree">
+    <div id="bookThreeTitleTextDisplay"></div>
+    <div id="bookThreeAuthorTextDisplay"></div>
+   </div>
+  </div>
  </div>
- Hello World!
+
+ <div class="mainLower">
+ </div>
 </body>
 
 </html>

@@ -3,29 +3,83 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.bookOne {
+.book {
+  margin-top: 10px;
   width: 300px;
   height: 450px;
   background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bookOne {
   background-image: url("./assets/facebook.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.bookTwo {
-  width: 300px;
-  height: 450px;
-  background-color: blue;
+#bookTwo {
   background-image: url("./assets/horse.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.bookThree {
-  width: 300px;
-  height: 450px;
-  background-color: green;
+#bookThree {
   background-image: url("./assets/thecoolwar.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
+
+.titleInput {
+  width: 200px;
+  height: 30px;
+}
+.bookWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#bookOneTitleTextDisplay {
+  font-family: "Poiret One", cursive;
+  color: blanchedalmond;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#bookOneAuthorTextDisplay {
+  font-family: "Poiret One", cursive;
+  color: blanchedalmond;
+}
+
+#bookTwoTitleTextDisplay {
+  color: yellow;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Acme", sans-serif;
+}
+
+#bookTwoAuthorTextDisplay {
+  color: yellow;
+  font-family: "Acme", sans-serif;
+}
+#bookThreeTitleTextDisplay {
+  color: rgba(0, 0, 0, 0.808);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 40px;
+  font-weight: bold;
+}
+#bookThreeAuthorTextDisplay {
+  color: rgba(0, 0, 0, 0.808);
+  font-family: "Share Tech Mono", monospace;
+}
+
+button {
+  width: 100px;
+  border-radius: 0%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+font-family: "Acme", sans-serif;
