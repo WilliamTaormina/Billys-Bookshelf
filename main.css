@@ -14,14 +14,17 @@
 
 #bookOne {
   background-image: url("./assets/facebook.jpg");
+  position: relative;
 }
 
 #bookTwo {
   background-image: url("./assets/horse.jpg");
+  position: relative;
 }
 
 #bookThree {
   background-image: url("./assets/thecoolwar.jpg");
+  position: relative;
 }
 
 .titleInput {
@@ -32,6 +35,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .inputWrapper {
@@ -45,11 +50,18 @@
   color: blanchedalmond;
   font-size: 40px;
   font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
 }
 
 #bookOneAuthorTextDisplay {
   font-family: "Poiret One", cursive;
   color: blanchedalmond;
+  position: absolute;
+  bottom: 40;
+  right: 40;
+  text-align: center;
+  font-size: 25px;
 }
 
 #bookTwoTitleTextDisplay {
@@ -57,21 +69,38 @@
   font-size: 40px;
   font-weight: bold;
   font-family: "Acme", sans-serif;
+  text-align: center;
+  padding-top: 10px;
 }
 
 #bookTwoAuthorTextDisplay {
-  color: yellow;
+  color: rgba(0, 0, 0, 0.877);
   font-family: "Acme", sans-serif;
+  position: absolute;
+  bottom: 13;
+  right: 95;
+  font-style: italic;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 100;
 }
 #bookThreeTitleTextDisplay {
   color: rgba(0, 0, 0, 0.808);
   font-family: "Share Tech Mono", monospace;
   font-size: 40px;
   font-weight: bold;
+  text-align: center;
+  padding-top: 33px;
+  transform: rotate(-1deg);
 }
 #bookThreeAuthorTextDisplay {
-  color: rgba(0, 0, 0, 0.808);
+  color: white;
+  font-size: 30px;
   font-family: "Share Tech Mono", monospace;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  text-shadow: 5px 5px 7px rgb(255, 56, 56);
 }
 
 button {
