@@ -1,4 +1,5 @@
-# Novvum-Bookshelf
+#Billys-Bookshelf
 
-Have you ever tried thinking of a good name for a book?
-Now you can!
+A little app that lets you re-title famous books and make yourself the author.
+
+Challenge: Use Javascript to pass data and build html elements.
