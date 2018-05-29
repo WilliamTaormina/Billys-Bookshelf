@@ -33,3 +33,7 @@ function bookThreeAuthorFunction() {
   document.getElementById("bookThreeAuthorTextDisplay").innerHTML = c;
   document.getElementById("bookThreeAuthorTextInput").value = "";
 }
+/* Questions:
+  - Why did I have to change the variable names to get this to run? When I had all vars as "x", it seems like the variable namespace was polluted? Doesn't each function have a separate scope?
+  - How can I refactor these functions to make them more DRY?
+*/
