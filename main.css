@@ -59,8 +59,8 @@
   font-family: "Poiret One", cursive;
   color: blanchedalmond;
   position: absolute;
-  bottom: 40;
-  right: 40;
+  bottom: 40px;
+  right: 40px;
   text-align: center;
   font-size: 25px;
 }
@@ -78,8 +78,8 @@
   color: rgba(0, 0, 0, 0.877);
   font-family: "Acme", sans-serif;
   position: absolute;
-  bottom: 13;
-  right: 35;
+  bottom: 13px;
+  right: 35px;
   font-style: italic;
   text-align: left;
   font-size: 20px;
