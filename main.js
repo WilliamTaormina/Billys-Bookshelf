@@ -1,5 +1,7 @@
 // Book Title Name Input
 
+/* WOOHOO This has been refactored!
+
 function bookOneTitleFunction() {
   var x = document.getElementById("bookOneTitleTextInput").value;
   document.getElementById("bookOneTitleTextDisplay").innerHTML = x;
@@ -29,11 +31,15 @@ function bookThreeTitleFunction() {
 }
 
 function bookThreeAuthorFunction() {
-  var c = document.getElementById("bookThreeAuthorTextInput").value;
-  document.getElementById("bookThreeAuthorTextDisplay").innerHTML = c;
-  document.getElementById("bookThreeAuthorTextInput").value = "";
+  ookAuthorFunction("bookThreeAuthorTextInput", "bookThreeAuthorTextDisplay");
 }
 /* Questions:
   - Why did I have to change the variable names to get this to run? When I had all vars as "x", it seems like the variable namespace was polluted? Doesn't each function have a separate scope?
   - How can I refactor these functions to make them more DRY?
 */
+
+function inputFunction(textInputId, textDisplayId) {
+  var c = document.getElementById(textInputId).value;
+  document.getElementById(textDisplayId).innerHTML = c;
+  document.getElementById(textInputId).value = "";
+}
